@@ -6,7 +6,7 @@ import { FaChevronDown } from "react-icons/fa6";
 
 const Categores = () => {
   return (
-    <div className=" relative">
+    <div className="group1 relative">
       <div className="w-[130px] h-[40px] rounded-tl-xl rounded-tr-xl  text-[var(--w)] flex justify-center text-xl  items-center gap-2 bg-[var(--g)]">
         <p>
           <PiListBold />
@@ -15,8 +15,8 @@ const Categores = () => {
       </div>
 
       {/* list of catgores */}
-      <div className=" top-[45px] bg-[var(--w)]  border-1 border-[#ddd] shadow-lg shadow-[#ddd] right-0  text-xl w-[230px] absolute rounded-md">
-        <ul>
+      <div className=" hidden  group-hover1 top-[45px] bg-[var(--w)]  border-1 border-[#ddd] shadow-lg shadow-[#ddd] right-0  text-lg w-[230px] absolute rounded-md">
+        <ul className=" ">
           {Categories.map((item, id1) => {
             return (
               <li
@@ -39,7 +39,7 @@ const Categores = () => {
                     {item.subcategories.map((category, id) => {
                       return (
                         <li
-                          className="py-2  hover:text-[var(--g)] hover:bg-[var(--lg)] relative px-4 border-b-[2px] border-[var(--w2)]"
+                          className="py-2 text-black  hover:text-[var(--g)] hover:bg-[var(--lg)] relative text-lg px-4 border-b-[2px] border-[var(--w2)]"
                           key={id}
                         >
                           <Link href={category.link}>{category.name}</Link>

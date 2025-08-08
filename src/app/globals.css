@@ -34,3 +34,6 @@ ol {
   top: 0;
   border-bottom: 2px solid #1e8917;
 }
+.group1:hover .group-hover1 {
+  display: block !important;
+}

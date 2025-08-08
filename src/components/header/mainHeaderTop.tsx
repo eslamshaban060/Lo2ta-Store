@@ -9,13 +9,13 @@ const MainHeaderTop = () => {
     <div className=" w-[100vw] h-auto  ">
       <div className=" continer py-4  items-center mx-auto flex  justify-between">
         {/* logo */}
-        <div className="  font-bold text-4xl">
+        <div className="  font-bold text-3xl lg:text-4xl">
           <span className=" text-[var(--g)]">لقطه </span>
           <span className=" text-[var(--o)]">ستور</span>
         </div>
 
         {/* search */}
-        <div className=" w-[55%] hidden md:block">
+        <div className=" w-[50%] lg:w-[55%] hidden md:block">
           <SearchBar />
         </div>
 
@@ -26,7 +26,9 @@ const MainHeaderTop = () => {
               <span className="transform hover:translate-y-[-1px]  transition duration-75 w-[40px] bg-[var(--w2)] h-[40px] rounded-full flex  group-hover:bg-[var(--lg)] justify-center  items-center ">
                 <FaRegUser />
               </span>
-              <span>حسابى</span>
+              <span className=" hidden  sm:block md:hidden lg:block">
+                حسابى
+              </span>
             </div>
           </Link>
           <Link href="/account">
@@ -37,7 +39,9 @@ const MainHeaderTop = () => {
                   0
                 </span>
               </span>
-              <span>سلة التسوق</span>
+              <span className=" hidden sm:block md:hidden lg:block">
+                سلة التسوق
+              </span>
             </div>
           </Link>
         </div>
