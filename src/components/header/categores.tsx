@@ -15,12 +15,12 @@ const Categores = () => {
       </div>
 
       {/* list of catgores */}
-      <div className=" hidden  group-hover1 top-[45px] bg-[var(--w)]  border-1 border-[#ddd] shadow-lg shadow-[#ddd] right-0  text-lg w-[230px] absolute rounded-md">
+      <div className=" hidden  z-50 group-hover1 top-[45px] bg-[var(--w)]  border-1 border-[#ddd] shadow-lg shadow-[#ddd] right-0  text-lg w-[230px] absolute rounded-md">
         <ul className=" ">
           {Categories.map((item, id1) => {
             return (
               <li
-                className="py-2 group  hover:text-[var(--g)] hover:bg-[var(--lg)] relative px-4 border-b-[2px] border-[var(--w2)]"
+                className="py-2 group  hover:text-[var(--g)] hover:bg-[var(--w2)] relative px-4 border-b-[2px] border-[var(--w2)]"
                 key={id1}
               >
                 <Link className=" flex justify-between" href={item.link}>
@@ -39,7 +39,7 @@ const Categores = () => {
                     {item.subcategories.map((category, id) => {
                       return (
                         <li
-                          className="py-2 text-black  hover:text-[var(--g)] hover:bg-[var(--lg)] relative text-lg px-4 border-b-[2px] border-[var(--w2)]"
+                          className="py-2 text-black  hover:text-[var(--g)] hover:bg-[var(--w2)] hover:pr-5 relative text-lg px-4 border-b-[2px] border-[var(--w2)]"
                           key={id}
                         >
                           <Link href={category.link}>{category.name}</Link>
