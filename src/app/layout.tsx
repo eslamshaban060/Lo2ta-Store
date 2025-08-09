@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { El_Messiri } from "next/font/google";
 import "./globals.css";
 
-export const elMessiri = El_Messiri({
+const elMessiri = El_Messiri({
   weight: ["400", "500", "600", "700"],
   subsets: ["arabic", "latin", "cyrillic", "latin-ext"],
 });
