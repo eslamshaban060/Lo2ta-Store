@@ -102,3 +102,39 @@ export const Categories = [
     ],
   },
 ];
+
+// main slide data
+export const sliderData = [
+  {
+    id: 1,
+    image:
+      "https://images.unsplash.com/photo-1607082350899-7e105aa886ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    badge: "فقط 100 جنيه!",
+    title: "منتجات متنوعة",
+    subtitle: "أفضل العروض",
+  },
+  {
+    id: 2,
+    image:
+      "https://images.unsplash.com/photo-1607082350899-7e105aa886ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    badge: "توصيل مجاني!",
+    title: "أحدث المنتجات",
+    subtitle: "وصل حديثاً",
+  },
+  {
+    id: 3,
+    image:
+      "https://images.unsplash.com/photo-1607082350899-7e105aa886ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    badge: "خصم 20%",
+    title: "تسوق بأقل سعر",
+    subtitle: "عروض حصرية",
+  },
+  {
+    id: 4,
+    image:
+      "https://images.unsplash.com/photo-1607082350899-7e105aa886ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    badge: "اطلب الآن!",
+    title: "أزياء عصرية",
+    subtitle: "تشكيلة جديدة",
+  },
+];

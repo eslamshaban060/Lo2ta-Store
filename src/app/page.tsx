@@ -4,7 +4,7 @@ import Main from "@/components/main/main";
 
 const page = () => {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       {/* header component  */}
       <Header />
 
