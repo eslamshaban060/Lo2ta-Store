@@ -38,3 +38,16 @@ ol {
 .group1:hover .group-hover1 {
   display: block !important;
 }
+
+/* to make anamation of slider Badge */
+.sliderBadge {
+  animation: SliderBadge 2s infinite ease-in-out;
+}
+@keyframes SliderBadge {
+  0% {
+    background-color: #1e8917 !important;
+  }
+  100% {
+    background-color: #1f891700 !important;
+  }
+}

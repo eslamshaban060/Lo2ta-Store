@@ -1,3 +1,5 @@
+import { MessageSquare, Headphones, Search, Grid } from "lucide-react";
+
 export const NavLinks = [
   {
     name: "الرئسية",
@@ -136,5 +138,35 @@ export const sliderData = [
     badge: "اطلب الآن!",
     title: "أزياء عصرية",
     subtitle: "تشكيلة جديدة",
+  },
+];
+
+// Types
+interface FeatureProps {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+}
+
+export const Features: FeatureProps[] = [
+  {
+    icon: <Grid />,
+    title: "بساطة السعر الثابت",
+    description: "جميع المنتجات بسعر 100 جنيه مصري فقط—بدون مفاجآت.",
+  },
+  {
+    icon: <MessageSquare />,
+    title: "دردشة مباشرة مع البائع",
+    description: "تحدث مباشرة مع التجار عبر واتساب أو من خلال الاتصال.",
+  },
+  {
+    icon: <Headphones />,
+    title: "دعم متواصل",
+    description: "فريق خدمة العملاء متاح 24 ساعة لمساعدتك في أي وقت.",
+  },
+  {
+    icon: <Search />,
+    title: "فئات مختارة بعناية",
+    description: "طعام، أزياء، أدوات منزلية، هدايا، مستحضرات تجميل وأكثر.",
   },
 ];

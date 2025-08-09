@@ -33,10 +33,10 @@ const MainSlider = () => {
               alt={`Slide ${item.id}`}
               fill
             />
-            <div className=" rounded-3xl absolute flex justify-center items-center  right-[10px] top-[10px] bg-[var(--g)] h-[40px] w-[140px] text-[var(--w)]  ">
+            <div className=" rounded-3xl absolute flex justify-center items-center  right-[10px] top-[10px] bg-[var(--g)] h-[40px] w-[140px] text-[var(--w)]  sliderBadge ">
               {item.badge}
             </div>
-            <div className=" rounded-xl absolute flex justify-center items-center  flex-col right-[10px] bottom-[10px] bg-[var(--w)] p-5 text-[var(--g)]  ">
+            <div className=" rounded-xl absolute flex justify-center items-center  flex-col left-[10px] bottom-[10px] bg-[var(--w)] p-5 text-[var(--g)]  ">
               <p className=" font-medum text-black text-xl">{item.title}</p>
               <p>{item.subtitle}</p>
             </div>
