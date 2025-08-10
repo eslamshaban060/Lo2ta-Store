@@ -13,7 +13,7 @@ const LastProducts = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 4,
-    slidesToScroll: 2,
+    slidesToScroll: 4,
     autoplay: true,
     autoplaySpeed: 4000,
     responsive: [
@@ -56,8 +56,9 @@ const LastProducts = () => {
           {Products.map((item: productType) => {
             return (
               <div className=" px-3" key={item.id}>
-                <div className=" border-[1px] hover:border-[var(--g)] bg-white border-[#ddd]  rounded-lg hover:shadow-lg hover:shadow-[rgba(0,0,0,0.19)]">
+                <div className=" relative group border-[1px] hover:border-[var(--g)] bg-white border-[#ddd]  rounded-lg hover:shadow-lg hover:shadow-[rgba(0,0,0,0.19)]">
                   <ProductCard product={item} />
+                  <div className=" bottom-0 left-0  duration-300   group-hover:w-[100%] h-[5px] w-[0%] absolute  z-50 bg-[var(--g)]  "></div>
                 </div>
               </div>
             );
