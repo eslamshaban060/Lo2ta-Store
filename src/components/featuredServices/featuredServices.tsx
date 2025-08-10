@@ -4,8 +4,10 @@ import { Features } from "@/data/links";
 const FeaturedServices = () => {
   return (
     <div className=" w-[100vw] py-[40px]  mb-5 relative h-auto bg-[var(--w2)]">
-      <div className=" py-[50px]">
-        <h2 className=" text-center font-bold text-4xl">خدماتنا المميزة</h2>
+      <div className=" py-[30px] md:py-[50px] ">
+        <h2 className=" text-center text-[var(--h)] font-bold text-4xl">
+          خدماتنا المميزة
+        </h2>
       </div>
       <div className=" continer grid gap-[30px] grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 py-5   mx-auto ">
         {Features.map((item, id) => {

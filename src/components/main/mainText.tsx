@@ -10,7 +10,7 @@ const MainText = () => {
         {/* title */}
         <div className="  ">
           <h1 className=" font-black leading-[36px] sm:leading-[60px] text-[26px] sm:text-4xl">
-            <span>لقطة ستور</span>
+            <span className=" text-[var(--h)]">لقطة ستور</span>
             <span className="  w-fit relative text-[var(--g)] block ">
               منتجاتك كلها علي قد الجيب!
               <div className="mt-2 sm:pt-1 w-[100%] h-[3px]  rounded-md bg-gradient-to-l to-[var(--g)] from-[var(--o)] absolute"></div>

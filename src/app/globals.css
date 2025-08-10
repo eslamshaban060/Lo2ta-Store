@@ -9,6 +9,7 @@
   --b: #000000;
   --lg: #1f891730;
   --g2: #77807d;
+  --h: #253d4e;
 }
 body {
   padding: 0;
@@ -41,13 +42,16 @@ ol {
 
 /* to make anamation of slider Badge */
 .sliderBadge {
-  animation: SliderBadge 2s infinite ease-in-out;
+  animation: SliderBadge 2s infinite ease-in-out !important;
 }
 @keyframes SliderBadge {
   0% {
-    background-color: #1e8917 !important;
+    background-color: #1e8917;
+  }
+  50% {
+    background-color: #1f891700;
   }
   100% {
-    background-color: #1f891700 !important;
+    background-color: #1e8917;
   }
 }
