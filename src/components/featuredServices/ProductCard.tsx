@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import iconsList from "@/data/cardIcons";
-import { ProductType } from "@/data/products";
+import ProductType from "@/data/products";
 
 interface productTypeProps {
   product: ProductType;
