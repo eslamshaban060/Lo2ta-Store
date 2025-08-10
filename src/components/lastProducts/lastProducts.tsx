@@ -5,7 +5,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ProductCard from "../featuredServices/ProductCard";
-import { productType } from "../featuredServices/ProductCard";
+import ProductType from "@/data/products";
 
 const LastProducts = () => {
   const settings = {
@@ -53,7 +53,7 @@ const LastProducts = () => {
       </div>
       <div className=" continer w-[100vw]  py-5 mx-auto">
         <Slider className=" w-[100%] " {...settings}>
-          {Products.map((item: productType) => {
+          {Products.map((item: ProductType) => {
             return (
               <div className=" px-3" key={item.id}>
                 <div className=" relative group border-[1px] hover:border-[var(--g)] bg-white border-[#ddd]  rounded-lg hover:shadow-lg hover:shadow-[rgba(0,0,0,0.19)]">
