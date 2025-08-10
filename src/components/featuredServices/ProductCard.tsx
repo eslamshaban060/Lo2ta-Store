@@ -11,7 +11,10 @@ export interface productType {
   price: string;
   seller: string;
 }
-const ProductCard = ({ product }) => {
+interface productTypeProps {
+  product: productType;
+}
+const ProductCard: React.FC<productTypeProps> = ({ product }) => {
   const Share = iconsList[0];
   const Love = iconsList[1];
   const Cart = iconsList[2];
