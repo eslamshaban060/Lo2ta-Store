@@ -1,18 +1,10 @@
 import React from "react";
 import Image from "next/image";
 import iconsList from "@/data/cardIcons";
-import { div } from "framer-motion/client";
+import { ProductType } from "@/data/products";
 
-export interface productType {
-  id: string;
-  name: string;
-  description: string;
-  image: string;
-  price: string;
-  seller: string;
-}
 interface productTypeProps {
-  product: productType;
+  product: ProductType;
 }
 const ProductCard: React.FC<productTypeProps> = ({ product }) => {
   const Share = iconsList[0];
