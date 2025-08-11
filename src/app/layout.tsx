@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { El_Messiri } from "next/font/google";
 import "./globals.css";
-import Head from "next/head";
 
 const elMessiri = El_Messiri({
   weight: ["400", "500", "600", "700"],

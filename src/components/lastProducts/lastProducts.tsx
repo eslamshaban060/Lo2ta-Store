@@ -4,7 +4,7 @@ import { Products } from "@/data/products";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import ProductCard from "../featuredServices/ProductCard";
+import ProductCard from "./ProductCard";
 import ProductType from "@/data/products";
 
 const LastProducts = () => {
@@ -46,7 +46,6 @@ const LastProducts = () => {
         <h2 className=" text-center text-[var(--h)] font-bold text-[40px]">
           احـدث المنتجـات
         </h2>
-        {/* <div className=" mb-5 mt-2 bg-[var(--g)] w-[90px] h-[4px] rounded-2xl "></div> */}
         <p className=" text-center pt-2 text-xl text-[var(--g2)]">
           كل منتج بـ 100 جنيه فقط – اختار اللى يناسبك
         </p>
