@@ -3,6 +3,7 @@ import Header from "@/components/header/header";
 import Main from "@/components/main/main";
 import FeaturedServices from "@/components/featuredServices/featuredServices";
 import LastProducts from "@/components/lastProducts/lastProducts";
+import Discover from "@/components/discover/discover";
 
 const page = () => {
   return (
@@ -18,6 +19,9 @@ const page = () => {
 
       {/* Last Products component */}
       <LastProducts />
+
+      {/* Discover component */}
+      <Discover />
     </div>
   );
 };
