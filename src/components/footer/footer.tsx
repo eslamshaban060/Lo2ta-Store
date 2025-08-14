@@ -12,7 +12,7 @@ const Footer = () => {
     <div className=" w-[100vw] bg-[var(--h)] ">
       <div className="w-[100vw] p-1 border-b-[1px] border-[#ffffff1b] ">
         <div className=" w-[100%] text-white continer mx-auto py-5">
-          <div className="py-5 grid grid-cols-1 gap-[60px] sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+          <div className="py-5 grid grid-cols-1 gap-5 lg:gap-[60px] sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             <div>
               <h3 className="py-4 text-xl font-bold">عن لقطة ستور</h3>
               <p className=" text-[#ffffffb5]">
