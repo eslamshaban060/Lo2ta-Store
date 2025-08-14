@@ -6,6 +6,7 @@ import LastProducts from "@/components/lastProducts/lastProducts";
 import Discover from "@/components/discover/discover";
 import Testimonials from "@/components/testimonials/testimonials";
 import Blog from "@/components/blog/blog";
+import Footer from "@/components/footer/footer";
 
 const HomePage = () => {
   return (
@@ -30,6 +31,9 @@ const HomePage = () => {
 
       {/* Blog component */}
       <Blog />
+
+      {/* Blog component */}
+      <Footer />
     </div>
   );
 };

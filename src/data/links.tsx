@@ -1,4 +1,8 @@
 import { MessageSquare, Headphones, Search, Grid } from "lucide-react";
+interface InfoPage {
+  title: string;
+  link: string;
+}
 
 export const NavLinks = [
   {
@@ -20,6 +24,25 @@ export const NavLinks = [
   {
     name: "اتصل بنا",
     link: "/contact",
+  },
+];
+
+export const InfoPages: InfoPage[] = [
+  {
+    title: "الأسئلة الشائعة",
+    link: "/faq",
+  },
+  {
+    title: "الشحن والإرجاع",
+    link: "/shipping-returns",
+  },
+  {
+    title: "سياسة الخصوصية",
+    link: "/privacy-policy",
+  },
+  {
+    title: "شروط الخدمة",
+    link: "/terms-of-service",
   },
 ];
 
