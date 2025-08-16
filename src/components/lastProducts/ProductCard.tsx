@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import iconsList from "@/data/cardIcons";
 import ProductType from "@/data/products";
+import ProductButton from "./productButton";
 
 interface productTypeProps {
   product: ProductType;
@@ -60,9 +61,9 @@ const ProductCard: React.FC<productTypeProps> = ({ product }) => {
           <span className=" block">{product.category}</span>
         </p>
 
-        <button className=" w-[80%] mt-5 text-[var(--g)] hover:text-[var(--w)]  hover:bg-[var(--g)] mx-auto justify-center flex items-center py-2 text-lg border-1 rounded-4xl border-[var(--g)]">
-          عرض التفاصيل
-        </button>
+        <div>
+          <ProductButton Product={product} />
+        </div>
       </div>
     </div>
   );

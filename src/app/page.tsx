@@ -12,28 +12,44 @@ const HomePage = () => {
   return (
     <div className="overflow-x-hidden">
       {/* header component  */}
-      <Header />
+      <section>
+        <Header />
+      </section>
 
       {/* hero or main component */}
-      <Main />
+      <section>
+        <Main />
+      </section>
 
       {/* Featured Servicescomponent */}
-      <FeaturedServices />
+      <section>
+        <FeaturedServices />
+      </section>
 
       {/* Last Products component */}
-      <LastProducts />
+      <section>
+        <LastProducts />
+      </section>
 
       {/* Discover component */}
-      <Discover />
+      <section>
+        <Discover />
+      </section>
 
       {/* Testimonials component */}
-      <Testimonials />
+      <section>
+        <Testimonials />
+      </section>
 
       {/* Blog component */}
-      <Blog />
+      <section>
+        <Blog />
+      </section>
 
       {/* Blog component */}
-      <Footer />
+      <section>
+        <Footer />
+      </section>
     </div>
   );
 };

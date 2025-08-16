@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { El_Messiri } from "next/font/google";
 import "./globals.css";
+import { ReduxProvider } from "./redux/reduxProvider";
 
 const elMessiri = El_Messiri({
   weight: ["400", "500", "600", "700"],
@@ -24,7 +25,9 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="ar" dir="rtl">
-      <body className={elMessiri.className}>{children}</body>
+      <body className={elMessiri.className}>
+        <ReduxProvider>{children}</ReduxProvider>
+      </body>
     </html>
   );
 }
