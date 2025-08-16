@@ -6,7 +6,10 @@ export default interface ProductType {
   price: string;
   category: string;
   subcategories: string[];
+  rating: number;
+  shortName: string;
 }
+
 export const Products: ProductType[] = [
   {
     id: "1",
@@ -17,6 +20,8 @@ export const Products: ProductType[] = [
     price: "100 جنيه",
     category: "مستحضرات تجميل",
     subcategories: ["كريمات محلية", "ماسكات طبيعية"],
+    rating: 4.5,
+    shortName: "منظف ملابس",
   },
   {
     id: "2",
@@ -27,6 +32,8 @@ export const Products: ProductType[] = [
     price: "100 جنيه",
     category: "أطفال",
     subcategories: ["إكسسوارات مدرسية", "بوكس مفاجآت"],
+    rating: 4.8,
+    shortName: "مناديل مبللة",
   },
   {
     id: "3",
@@ -37,6 +44,8 @@ export const Products: ProductType[] = [
     price: "100 جنيه",
     category: "إكسسوارات",
     subcategories: ["محافظ وميداليات", "نظارات شمس"],
+    rating: 4.2,
+    shortName: "كابل مايكرو",
   },
   {
     id: "4",
@@ -47,8 +56,9 @@ export const Products: ProductType[] = [
     price: "100 جنيه",
     category: "طعام",
     subcategories: ["مخبوزات", "ساندوتشات"],
+    rating: 3.9,
+    shortName: "بطاطس طازجة",
   },
-
   {
     id: "6",
     name: "كلوركس بخاخ مزيل للبقع ويحمي ألوان الملابس - 500 مل",
@@ -58,6 +68,8 @@ export const Products: ProductType[] = [
     price: "100 جنيه",
     category: "مستحضرات تجميل",
     subcategories: ["صابون طبيعي", "ماسكات طبيعية"],
+    rating: 4.7,
+    shortName: "مزيل بقع",
   },
   {
     id: "7",
@@ -68,6 +80,8 @@ export const Products: ProductType[] = [
     price: "100 جنيه",
     category: "أطفال",
     subcategories: ["ألعاب صغيرة", "قصص أطفال"],
+    rating: 4.9,
+    shortName: "بلسم شعر",
   },
   {
     id: "8",
@@ -78,6 +92,8 @@ export const Products: ProductType[] = [
     price: "100 جنيه",
     category: "إكسسوارات",
     subcategories: ["نظارات شمس", "ساعات تقليد"],
+    rating: 4.6,
+    shortName: "كابل شحن",
   },
   {
     id: "9",
@@ -88,6 +104,8 @@ export const Products: ProductType[] = [
     price: "100 جنيه",
     category: "طعام",
     subcategories: ["عصائر طبيعية", "منتجات منزلية"],
+    rating: 4.1,
+    shortName: "ذرة مقطعة",
   },
   {
     id: "10",
@@ -98,6 +116,8 @@ export const Products: ProductType[] = [
     price: "100 جنيه",
     category: "طعام",
     subcategories: ["حلويات شرقية"],
+    rating: 4.4,
+    shortName: "حلاوة طحينية",
   },
 
   {
@@ -109,6 +129,8 @@ export const Products: ProductType[] = [
     price: "100 جنيه",
     category: "مستحضرات تجميل",
     subcategories: ["ماسكات طبيعية", "كريمات محلية"],
+    rating: 4.3,
+    shortName: "مزيل بقع",
   },
   {
     id: "12",
@@ -119,6 +141,8 @@ export const Products: ProductType[] = [
     price: "100 جنيه",
     category: "أطفال",
     subcategories: ["ألعاب صغيرة", "قصص أطفال"],
+    rating: 4.9,
+    shortName: "شامبو أطفال",
   },
   {
     id: "13",
@@ -129,6 +153,8 @@ export const Products: ProductType[] = [
     price: "100 جنيه",
     category: "إكسسوارات",
     subcategories: ["نظارات شمس", "ساعات تقليد"],
+    rating: 4.5,
+    shortName: "كابل تايب سي",
   },
 
   {
@@ -140,6 +166,8 @@ export const Products: ProductType[] = [
     price: "100 جنيه",
     category: "طعام",
     subcategories: ["منتجات منزلية"],
+    rating: 5.0,
+    shortName: "عسل طبيعي",
   },
   {
     id: "16",
@@ -150,6 +178,8 @@ export const Products: ProductType[] = [
     price: "100 جنيه",
     category: "مستحضرات تجميل",
     subcategories: ["كريمات محلية", "ماسكات طبيعية"],
+    rating: 4.4,
+    shortName: "معطر ملابس",
   },
   {
     id: "17",
@@ -160,6 +190,8 @@ export const Products: ProductType[] = [
     price: "100 جنيه",
     category: "مستحضرات تجميل",
     subcategories: ["كريمات محلية", "ماسكات طبيعية"],
+    rating: 4.8,
+    shortName: "زيت أطفال",
   },
   {
     id: "18",
@@ -170,6 +202,8 @@ export const Products: ProductType[] = [
     price: "100 جنيه",
     category: "إكسسوارات",
     subcategories: ["نظارات شمس", "محافظ وميداليات"],
+    rating: 4.3,
+    shortName: "كابل آيفون",
   },
   {
     id: "19",
@@ -180,6 +214,8 @@ export const Products: ProductType[] = [
     price: "100 جنيه",
     category: "طعام",
     subcategories: ["حلويات شرقية"],
+    rating: 4.6,
+    shortName: "بلح محشي",
   },
   {
     id: "20",
@@ -190,6 +226,8 @@ export const Products: ProductType[] = [
     price: "100 جنيه",
     category: "طعام",
     subcategories: ["حلويات شرقية"],
+    rating: 4.1,
+    shortName: "حلاوة سادة",
   },
   {
     id: "21",
@@ -200,6 +238,8 @@ export const Products: ProductType[] = [
     price: "100 جنيه",
     category: "مستحضرات تجميل",
     subcategories: ["كريمات محلية", "ماسكات طبيعية"],
+    rating: 4.5,
+    shortName: "منعم ملابس",
   },
   {
     id: "22",
@@ -210,6 +250,8 @@ export const Products: ProductType[] = [
     price: "100 جنيه",
     category: "أطفال",
     subcategories: ["ألعاب صغيرة", "قصص أطفال"],
+    rating: 4.0,
+    shortName: "لهاية أطفال",
   },
   {
     id: "23",
@@ -220,6 +262,8 @@ export const Products: ProductType[] = [
     price: "100 جنيه",
     category: "إكسسوارات",
     subcategories: ["نظارات شمس", "ساعات تقليد"],
+    rating: 4.7,
+    shortName: "كابل شحن سريع",
   },
   {
     id: "24",
@@ -230,6 +274,8 @@ export const Products: ProductType[] = [
     price: "100 جنيه",
     category: "طعام",
     subcategories: ["حلويات شرقية"],
+    rating: 4.5,
+    shortName: "بلح مصري",
   },
   {
     id: "25",
@@ -240,6 +286,8 @@ export const Products: ProductType[] = [
     price: "100 جنيه",
     category: "طعام",
     subcategories: ["منتجات منزلية"],
+    rating: 4.2,
+    shortName: "زبدة فول",
   },
   {
     id: "26",
@@ -250,6 +298,8 @@ export const Products: ProductType[] = [
     price: "100 جنيه",
     category: "مستحضرات تجميل",
     subcategories: ["ماسكات طبيعية", "صابون طبيعي"],
+    rating: 4.6,
+    shortName: "مسحوق غسيل",
   },
   {
     id: "27",
@@ -260,6 +310,8 @@ export const Products: ProductType[] = [
     price: "100 جنيه",
     category: "أطفال",
     subcategories: ["قصص أطفال", "ألعاب صغيرة"],
+    rating: 4.8,
+    shortName: "سيريلاك فواكه",
   },
   {
     id: "28",
@@ -270,6 +322,8 @@ export const Products: ProductType[] = [
     price: "100 جنيه",
     category: "إكسسوارات",
     subcategories: ["محافظ وميداليات", "نظارات شمس"],
+    rating: 4.0,
+    shortName: "كابل مايكرو",
   },
 
   {
@@ -281,6 +335,8 @@ export const Products: ProductType[] = [
     price: "100 جنيه",
     category: "طعام",
     subcategories: ["منتجات منزلية"],
+    rating: 4.9,
+    shortName: "عسل برسيم",
   },
   {
     id: "31",
@@ -291,6 +347,8 @@ export const Products: ProductType[] = [
     price: "100 جنيه",
     category: "مستحضرات تجميل",
     subcategories: ["كريمات محلية", "ماسكات طبيعية"],
+    rating: 4.5,
+    shortName: "منعم ملابس",
   },
   {
     id: "32",
@@ -301,6 +359,8 @@ export const Products: ProductType[] = [
     price: "100 جنيه",
     category: "إكسسوارات",
     subcategories: ["نظارات شمس", "ساعات تقليد"],
+    rating: 4.4,
+    shortName: "كابل سريع",
   },
   {
     id: "33",
@@ -311,6 +371,8 @@ export const Products: ProductType[] = [
     price: "100 جنيه",
     category: "طعام",
     subcategories: ["مخبوزات", "ساندوتشات"],
+    rating: 3.8,
+    shortName: "بطاطس ماما",
   },
   {
     id: "34",
@@ -321,6 +383,8 @@ export const Products: ProductType[] = [
     price: "100 جنيه",
     category: "طعام",
     subcategories: ["منتجات منزلية"],
+    rating: 4.7,
+    shortName: "عسل حوائج",
   },
   {
     id: "35",
@@ -331,6 +395,8 @@ export const Products: ProductType[] = [
     price: "100 جنيه",
     category: "مستحضرات تجميل",
     subcategories: ["كريمات محلية", "ماسكات طبيعية"],
+    rating: 4.6,
+    shortName: "منعم أقمشة",
   },
   {
     id: "36",
@@ -341,5 +407,7 @@ export const Products: ProductType[] = [
     price: "100 جنيه",
     category: "إكسسوارات",
     subcategories: ["محافظ وميداليات", "نظارات شمس"],
+    rating: 4.1,
+    shortName: "كابل تايب سي",
   },
 ];

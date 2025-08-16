@@ -79,13 +79,13 @@ const Footer = () => {
               <h3 className="py-4 text-xl font-bold"> تابعنا</h3>
               <p className=" flex  gap-2  text-2xl text-[#ffffffb5]">
                 <Link
-                  className=" text-white bg-[#ffffff18] rounded-full p-3"
+                  className=" text-white  hover:bg-[var(--g)] bg-[#ffffff18] rounded-full p-3"
                   href="facebook.com"
                 >
                   <LuFacebook />
                 </Link>
                 <Link
-                  className=" text-white bg-[#ffffff18]  rounded-full p-3"
+                  className=" hover:bg-[var(--g)] text-white bg-[#ffffff18]  rounded-full p-3"
                   href=""
                 >
                   <FaInstagram />
