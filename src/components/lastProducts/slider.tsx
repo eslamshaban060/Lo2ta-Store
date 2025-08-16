@@ -47,8 +47,8 @@ const ProdctsSlider: React.FC<DesignType> = ({ Design }) => {
   return (
     <div>
       <div
-        className={` continer w-[100vw] ${
-          Design === "productPag" ? "bg-white px-3" : ""
+        className={` continer rounded-lg w-[100vw] ${
+          Design === "productPag" ? "bg-white p-4 py-[30px]" : ""
         } py-5 mx-auto`}
       >
         <Slider className=" w-[100%] " {...settings}>

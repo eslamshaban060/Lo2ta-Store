@@ -8,7 +8,7 @@ import LongDescription from "@/components/product/longDescription";
 
 const ProductPage = () => {
   return (
-    <div>
+    <div className=" overflow-hidden overflow-y-scroll">
       <header>
         <Header />
       </header>
@@ -21,11 +21,11 @@ const ProductPage = () => {
         <ProductDetails />
       </section>
 
-      <section className=" bg-[var(--w2)]">
+      <section className=" bg-[var(--w2)] pb-[35px]">
         <LongDescription />
       </section>
 
-      <section className=" bg-[var(--w2)] mb-[35px]">
+      <section className=" bg-[var(--w2)] pb-[35px]">
         <ProductSlider />
       </section>
 
