@@ -5,7 +5,7 @@ const ProductSlider = () => {
   return (
     <div className=" w-[100vw] ">
       <div className=" w-[100%]  mx-auto">
-        <ProdctsSlider Design={"productPag"} />
+        <ProdctsSlider Design="productPag" />
       </div>
     </div>
   );
