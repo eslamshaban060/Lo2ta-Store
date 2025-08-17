@@ -13,7 +13,7 @@ const LastProducts = () => {
         </p>
       </div>
       <div>
-        <ProdctsSlider />
+        <ProdctsSlider Design="homePage" />
       </div>
     </div>
   );
