@@ -2,7 +2,7 @@
 import React from "react";
 import ProductType from "@/data/products";
 import { useDispatch } from "react-redux";
-import { OPEN_PRODUCT } from "./actionTypes";
+import { OPEN_PRODUCT } from "../../app/redux/actionTypes";
 import { useRouter } from "next/navigation";
 
 // type

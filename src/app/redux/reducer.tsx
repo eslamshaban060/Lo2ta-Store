@@ -1,5 +1,5 @@
 import ProductType from "@/data/products";
-import { OPEN_PRODUCT } from "@/components/lastProducts/actionTypes";
+import { OPEN_PRODUCT } from "@/app/redux/actionTypes";
 
 export default interface initlType {
   newProduct: null | ProductType;
@@ -8,8 +8,15 @@ export default interface initlType {
 const Initialzation: initlType = {
   newProduct: null,
 };
+interface OpenProductAction {
+  type: typeof OPEN_PRODUCT;
+  newProduct: ProductType;
+}
 
-export const useReducer = (state = Initialzation, action: any) => {
+export const useReducer = (
+  state = Initialzation,
+  action: OpenProductAction
+) => {
   switch (action.type) {
     case OPEN_PRODUCT:
       return {

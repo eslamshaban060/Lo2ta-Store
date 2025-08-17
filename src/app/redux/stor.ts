@@ -1,4 +1,3 @@
-import { configureStore } from "@reduxjs/toolkit";
 import { createStore } from "@reduxjs/toolkit";
 import { useReducer } from "./reducer";
 
