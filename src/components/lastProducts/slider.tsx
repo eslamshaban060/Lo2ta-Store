@@ -7,11 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import ProductCard from "./ProductCard";
 import ProductType from "@/data/products";
 
-interface DesignType {
-  Design: string;
-}
-
-const ProdctsSlider: React.FC<DesignType> = ({ Design }) => {
+const ProdctsSlider: React.FC<{ Design: string }> = ({ Design }) => {
   const settings = {
     dots: false,
     infinite: true,
